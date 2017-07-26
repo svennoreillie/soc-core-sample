@@ -1,0 +1,22 @@
+{
+  "name": "soc-core sample",
+  "version": "0.1.0",
+  "description": "Sample project showing usage of soc-core template",
+  "scripts": {
+    "start": "webpack-dev-server --watch --progress --inline --open",
+    "build": "webpack --progress"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "soc-core": "^0.3.3"
+  },
+  "devDependencies": {
+    "sass-loader": "^6.0.6",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "node-sass": "^4.5.3",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0"
+  }
+}

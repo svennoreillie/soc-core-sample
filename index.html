@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Soc-core Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="test.css">
+    <script src="dist/app.bundle.js"></script>
+</head>
+
+<body>
+    <div class="soc-appversion">1.9.0.0</div>
+    <div class="soc-page has-navbar has-sidebar">
+        <!-- loader -->
+        <div class="soc-loader-block"></div>
+        <div class="soc-loader">Loading...</div>
+
+        <div class="soc-navbar" id="navbarContent">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <!-- Sidebar toggler -->
+                        <button type="button" class="toggler-navbar" id="soc-sidebar-toggler">
+                            <i class="fa fa-angle-double-left fa-2x" aria-hidden="true"></i>
+                            <i class="fa fa-angle-double-right fa-2x hide" aria-hidden="true"></i>
+                        </button>
+
+                        <!-- Navigation dropdown toggler (small screens) -->
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                            aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <!-- Title -->
+                        <a class="navbar-brand" href="#top">Sample Soc-Core project</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li><a href="#">Using</a></li>
+                            <li><a href="#">Webpack</a></li>
+                            <li><a href="#">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right navbar-user">
+                            <li>
+                                <a><span class="fa fa-user"></span> User</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="soc-sidebar" id="sidebarContent">
+            <div class="soc-sidebar-wrapper">
+                <div class="soc-search">
+                    <div class="soc-search-filterbar">
+                        <div class="soc-search-filter filter1">
+                            <i class="fa fa-times fa-lg"></i>
+                        </div>
+                        <div class="soc-search-filter filter2">
+                            <i class="fa fa-check fa-lg"></i>
+                        </div>
+                        <div class="soc-search-filter filter3">
+                            <i class="fa fa-times fa-lg"></i>
+                        </div>
+                        <div class="soc-search-filter filter4">
+                            <i class="fa fa-times fa-lg"></i>
+                        </div>
+                        <div class="soc-search-filter filter5">
+                            <i class="fa fa-check fa-lg"></i>
+                        </div>
+
+                    </div>
+                    <div class="soc-search-form">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="firstnameSearch">First name</label>
+                                            <input type="text" class="form-control" id="firstnameSearch" placeholder="First name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="nameSearch">Name</label>
+                                            <input type="text" class="form-control" id="nameSearch" placeholder="Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <p class="soc-searchinfo">Make sure you fill both fields</p>
+                                        </div>
+                                        <button type="submit" class="btn btn-default">Search</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn soc-search-button">
+                        <i class="fa fa-filter" aria-hidden="true"></i> Filter &amp; zoek
+                    </div>
+                </div>
+
+                <div class="soc-sidebar-content">
+                    <div class="soc-searchitem filter2 searchContent2">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="row">
+                                    <div class="col-xs-12 soc-typography-bold">
+                                        <span class="soc-typography-name">Vermeulen</span> Jef
+                                        <span class="badge soc-searchitem-badge">1349</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        Meir 4
+                                    </div>
+                                    <div class="col-xs-6 text-right">
+                                        76110430306
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        2000 Antwerpen
+                                    </div>
+                                    <div class="col-xs-6 text-right">
+                                        <i class="fa fa-transgender" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="soc-searchresult">
+                    <div class="badge badge-info">6</div>
+                </div>
+
+                <div class="soc-actionbar">
+                    <button class="soc-actionbutton">
+          <i class="fa fa-plus" aria-hidden="true"></i><br>Nieuw
+          </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MainContent -->
+        <div class="soc-main has-actionbar">
+            <div class="soc-main-content">
+                <a name="top"></a>
+
+                <a name="socforms"></a>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="page-header">
+                                <h1>Soc Forms <small>Responsive form styling
+                    <span class="label label-default">Wrap</span>
+                </small></h1>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12">
+                            <p>Soc Forms are built upon the Bootstrap form style. The 'soc-form' is simplified however, in stead
+                                of using different bootstrap classes to style your form, only a single 'soc-form' class must
+                                be added to the form element. This will create a horizontal form on large screens and change
+                                itself to a vertical one on smaller devices.</p>
+                            <p>Guidelines for implementation</p>
+                            <ul>
+                                <li>Wrap entire form in a form element with the 'soc-form' class set</li>
+                                <li>Wrap label and its corresponding input element in a div</li>
+                                <li>Wrap the input element in a div as well</li>
+                                <li>Add one or more buttons at the end of the form</li>
+                                <li>It is recommended to always combine inputs with labels because screen readers might have
+                                    trouble with the form if they are omitted
+                                </li>
+                                <li>Don't apply css classes to any of the elements within the form</li>
+                            </ul>
+                            <p>Style options are available to change details of the form. Use the following classes next to
+                                'soc-form' to change the form:</p>
+                            <ul>
+                                <li>'inline': Creates a compact inline form</li>
+                                <li>'compact': Uses narrower elements (cannot be used together with inline)</li>
+                                <li>'btn-left': Places the buttons on the left hand side</li>
+                                <li>'hidden-labels': Removes the labels from screen but keeps them for screenreaders</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <h3>Regular form</h3>
+                            <form action="" class="soc-form">
+                                <div>
+                                    <label for="i1">Label 1</label>
+                                    <div><input type="text" id="i1" placeholder="item 1"></div>
+                                </div>
+                                <div>
+                                    <label for="i2">Longer labels will wrap when they can't fit the page</label>
+                                    <div><input type="text" id="i2" placeholder="item 2"></div>
+                                </div>
+                                <div>
+                                    <label for="i3">Label 3</label>
+                                    <div><input type="text" id="i3" placeholder="item 3"></div>
+                                </div>
+                                <div>
+                                    <label for="i4">Label 4</label>
+                                    <div><input type="text" id="i4" placeholder="item 4"></div>
+                                </div>
+                                <button class="btn-danger">Cancel</button>
+                                <button type="submit">Save</button>
+                            </form>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="well"><span>emmet:
+                <pre><code>form.soc-form>(div>(label[for="i$"]{Label $}+div>input#i$[type="text" placeholder="item $"]))*4+button[type="submit"]{Save}</code></pre>
+            </span></div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <h3>Inline form with hidden labels</h3>
+                            <form action="" class="soc-form inline hidden-labels">
+                                <div>
+                                    <label for="i1">Label 1</label>
+                                    <div><input type="text" id="i1" placeholder="item 1"></div>
+                                </div>
+                                <div>
+                                    <label for="i2">Label 2</label>
+                                    <div><input type="text" id="i2" placeholder="item 2"></div>
+                                </div>
+                                <div>
+                                    <label for="i3">Label 3</label>
+                                    <div><input type="text" id="i3" placeholder="item 3"></div>
+                                </div>
+                                <div>
+                                    <label for="i4">Label 4</label>
+                                    <div><input type="text" id="i4" placeholder="item 4"></div>
+                                </div>
+                                <button type="submit">Save</button>
+                            </form>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="well"><span>emmet:
+                <pre><code>form.soc-form.inline.hidden-labels>(div>(label[for="i$"]{Label $}+div>input#i$[type="text" placeholder="item $"]))*4+button[type="submit"]{Save}</code></pre>
+            </span></div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <h3>Compact form with buttons on the left</h3>
+                            <form class="soc-form compact btn-left">
+                                <div>
+                                    <label for="i1">Label 1</label>
+                                    <div><input type="text" id="i1" placeholder="item 1"></div>
+                                </div>
+                                <div>
+                                    <label for="i2">Label 2</label>
+                                    <div><input type="text" id="i2" placeholder="item 2"></div>
+                                </div>
+                                <div>
+                                    <label for="i3">Label 3</label>
+                                    <div><input type="text" id="i3" placeholder="item 3"></div>
+                                </div>
+                                <div>
+                                    <label for="i4">Label 4</label>
+                                    <div><input type="text" id="i4" placeholder="item 4"></div>
+                                </div>
+                                <button type="submit">Save</button>
+                                <button class="btn-danger">Cancel</button>
+                            </form>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="well"><span>emmet:
+                <pre><code>form.soc-form.compact.btn-left>(div>(label[for="i$"]{Label $}+div>input#i$[type="text" placeholder="item $"]))*4+button[type="submit"]{Save}+button.btn-danger{Cancel}</code></pre>
+            </span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="soc-actionbar">
+                <button class="soc-actionbutton">
+            <i class="fa fa-check" aria-hidden="true"></i><br>Bewaren
+            </button>
+                <button class="soc-actionbutton">
+            <i class="fa fa-pencil-square-o" aria-hidden="true"></i><br>Formulier
+            </button>
+                <button class="soc-actionbutton">
+            <i class="fa fa-remove" aria-hidden="true"></i><br>Verwijderen
+            </button>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

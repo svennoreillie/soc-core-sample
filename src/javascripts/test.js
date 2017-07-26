@@ -1,0 +1,1 @@
+import soc from 'soc-core';
