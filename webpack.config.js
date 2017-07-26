@@ -19,11 +19,9 @@ module.exports = {
 
     plugins: [
         new extractText({
-            filename: 'test.css',
+            filename: 'dist/test.css',
             disable: false,
             allChunks: true
         }),
-    ],
-
-    watch: false
+    ]
 };
