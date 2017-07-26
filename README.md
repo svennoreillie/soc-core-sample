@@ -8,7 +8,7 @@ This is a sample project to show how the template can be used. For documentation
 ## Setup
 ### Installing prerequisites
 * Download and install [git](http://nodejs.org/download/) for your OS 
-* Donwload [nodeJS](http://nodejs.org/download/) for your OS and install. Check by running 'node -v' in a terminal window.
+* Download [nodeJS](http://nodejs.org/download/) for your OS and install. Check by running 'node -v' in a terminal window.
 * npm should come installed with node, check by running 'npm -v'
 * Because npm is more frequently updated than node, update it by running 'npm install npm@latest -g'
 
