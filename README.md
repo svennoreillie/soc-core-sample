@@ -17,7 +17,7 @@ When all prerequisites are met, having a look at the style is possible using onl
 
 * Open up a terminal at a desired empty folder, make sure you have sufficient administrator rights. 
 * Run 'git clone https://github.com/svennoreillie/soc-core-sample.git'
-* cd into the soc-core project
+* cd into the soc-core sample project
 * Run 'npm install'
 * Run 'npm run build'
 * Open index.html
