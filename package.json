@@ -1,5 +1,5 @@
 {
-  "name": "soc-core sample",
+  "name": "soc-core-sample",
   "version": "0.1.0",
   "description": "Sample project showing usage of soc-core template",
   "scripts": {

@@ -16,7 +16,7 @@ This is a sample project to show how the template can be used. For documentation
 When all prerequisites are met, having a look at the style is possible using only 3 commands.
 
 * Open up a terminal at a desired empty folder, make sure you have sufficient administrator rights. 
-* Run 'git clone https://github.com/svennoreillie/soc-core.git'
+* Run 'git clone https://github.com/svennoreillie/soc-core-sample.git'
 * cd into the soc-core project
 * Run 'npm install'
 * Run 'npm run build'
