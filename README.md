@@ -1,4 +1,4 @@
-# soc-core sample project
+# soc-core-sample project
 
 v0.1.0
 
